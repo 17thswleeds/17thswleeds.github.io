@@ -184,3 +184,17 @@
 	});
 
 })();
+
+document.querySelectorAll('.email-tooltip').forEach((email) => {
+	button=document.createElement('button')
+	button.innerHTML = 'Copy';
+	button.classList.add('copyemail-button');
+  	button.onclick = () => {
+  		navigator.clipboard.writeText(email.firstChild.innerHTML);
+  		button.innerHTML = 'Copied';
+  		setTimeout(() => {
+  			button.innerHTML = 'Copy';
+  		}, 3000);
+  	};
+  	email.after(button)
+});
