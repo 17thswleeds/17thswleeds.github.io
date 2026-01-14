@@ -190,7 +190,7 @@ document.querySelectorAll('.email-tooltip').forEach((email) => {
 	button.innerHTML = 'Copy';
 	button.classList.add('copyemail-button');
   	button.onclick = () => {
-  		navigator.clipboard.writeText(email.firstChild.innerHTML);
+  		navigator.clipboard.writeText(email.firstElementChild.innerHTML);
   		button.innerHTML = 'Copied';
   		setTimeout(() => {
   			button.innerHTML = 'Copy';

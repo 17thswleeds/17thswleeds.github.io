@@ -1,1 +1,47 @@
-@media(max-width: 400px){div.person {display: flex;flex-direction: column;}.bio {text-align: center;}}.person {display: grid;grid-template-columns: 150px 1fr;grid-template-rows: 100px 1rem auto;grid-template-areas: "mugshot bio" "name bio" "role bio";grid-gap: 5px;margin: 35px 0 35px 0;height: auto;}.mugshot {grid-area: mugshot;height: 100px;place-self: center;}.name {grid-area: name;color: var(--navy);text-align: center;place-self:center;margin: 0;}.role {grid-area: role;color: var(--blue);margin: 0;text-align: center;margin: 0;}.bio {grid-area: bio;text-align: left;justify-self: left;}
+@media(max-width: 400px){
+	div.person {
+		display: flex;
+		flex-direction: column;
+	}
+	.bio {
+		text-align: center;
+	}
+}
+
+.person {
+	display: grid;
+	grid-template-columns: 150px 1fr;
+	grid-template-rows: 100px 1rem auto;
+	grid-template-areas: "mugshot bio" "name bio" "role bio";
+	grid-gap: 5px;
+	margin: 35px 0 35px 0;
+	height: auto;
+}
+
+.mugshot {
+	grid-area: mugshot;
+	height: 100px;
+	place-self: center;
+}
+
+.name {
+	grid-area: name;
+	color: var(--navy);
+	text-align: center;
+	place-self:center;
+	margin: 0;
+}
+
+.role {
+	grid-area: role;
+	color: var(--blue);
+	margin: 0;
+	text-align: center;
+	margin: 0;
+}
+
+.bio {
+	grid-area: bio;
+	text-align: left;
+	justify-self: left;
+}
